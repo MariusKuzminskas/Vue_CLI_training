@@ -13,6 +13,11 @@ export default {
     return {
       title: "My first Vue File. VUUEEEEEEE"
     }
+  },
+  methods: {
+    greeting: function() {
+      return 'Hey rich man how do you feel?';
+    }
   }
 }
 </script>
