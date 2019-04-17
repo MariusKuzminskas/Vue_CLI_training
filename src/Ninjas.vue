@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h1>{{title}}</h1>
-    <ninjas> </ninjas>
+    <ul>
+        <li v-for="ninja in ninjas">{{ninja}} </li>
+    </ul>
     
   </div>
 </template>
@@ -11,7 +12,7 @@ export default {
   
   data () {
     return {
-      title: "Ninja App"
+      ninjas: ['Yoshi', 'Mario', 'Ryu']
     }
   }
 }
