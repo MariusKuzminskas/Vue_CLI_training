@@ -1,6 +1,6 @@
 # vuejs-playlist
 
-> A Vue.js project
+> Me learning Vue.js from NetNinja
 
 ## Build Setup
 

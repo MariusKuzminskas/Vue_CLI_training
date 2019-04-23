@@ -1,9 +1,11 @@
 <template>
-  <div>
-    <ul>
-        <li v-for="ninja in ninjas">{{ninja}} </li>
-    </ul>
-    
+  <div class="">
+    <h1>List of ninjas</h1>
+    <div>
+      <ul>
+          <li v-for="ninja in ninjas">{{ninja}} </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -18,6 +20,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+ h1 {
+    color: green;
+  }
 </style>
