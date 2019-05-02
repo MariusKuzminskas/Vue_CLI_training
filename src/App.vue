@@ -1,10 +1,10 @@
 <template>
     <div>
         <keep-alive>
-            <component v-bind:is="component"></component>
+        <component v-bind:is="component" ></component>
         </keep-alive>
-        <button v-on:click="component = 'form-one'">Show form one</button>
-        <button v-on:click="component = 'form-two'">Show form two</button>
+        <button v-on:click="component = 'form-one'" >Show form one</button>
+        <button v-on:click="component = 'form-two'" >Show form two</button>
     </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
     },
     data () {
         return {
-            component: 'form-one'
+            component: 'form-two'
         }
     },
     methods: {
