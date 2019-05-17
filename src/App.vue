@@ -1,8 +1,7 @@
 <template>
     <div>
-        <!-- <add-blog></add-blog> -->
-        <show-blogs></show-blogs>
-        <list-blogs></list-blogs>
+        <!-- set up router step 5 -->
+        <router-view> </router-view>
     </div>
 </template>
 

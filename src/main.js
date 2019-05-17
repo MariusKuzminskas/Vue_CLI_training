@@ -2,7 +2,19 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueResource from 'vue-resource';
 
+// set up router step 1
+import VueRouter from 'vue-router';
+// set up router step 3.1
+import Routes from './routes'
+
 Vue.use(VueResource);
+// set up router step 2
+Vue.use(VueRouter);
+
+// set up router step 3
+const router = new VueRouter({
+  routes: Routes
+});
 
 // Custom directives
 Vue.directive('rainbow', {
@@ -36,5 +48,7 @@ export const bus = new Vue();
 
 new Vue({
   el: '#app',
-  render: h => h(App)
+  render: h => h(App),
+  // set up router step 4
+  router: router
 })
