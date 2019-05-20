@@ -13,7 +13,8 @@ Vue.use(VueRouter);
 
 // set up router step 3
 const router = new VueRouter({
-  routes: Routes
+  routes: Routes,
+  mode: "history"
 });
 
 // Custom directives
